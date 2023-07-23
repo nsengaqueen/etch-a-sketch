@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Etch-a-Sketch Game</title>
+  <meta name="author" content="Thomas McErlean">
+  <meta name="description" content="A simple etch-a-sketch browser game, built using Vanilla JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="titlecontainer">
+      <h1 id="gametitle">Etch-a-Sketch</h1>
+    </div>
+    <div class="container" id="menucontainer">
+      <button class="featurebutton" id="resetbutton" onclick="resetGrid()">Reset</button>
+      <button class="featurebutton" id="blackbutton" data-color="black">Black</button>
+      <button class="featurebutton" id="rainbowbutton" data-color="rainbow">Rainbow</button>
+      <button class="featurebutton" id="opaquebutton" data-color="opaque">Opaque</button>
+      <button class="featurebutton" id="selectbutton">Pick: <input type="color" value="#000000" id="input-color"></button>
+      <button class="featurebutton" id="eraserbutton" data-color="eraser">Eraser</button>
+      
+    </div>
+    <div class="container" id="maincontainer">
+    </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
